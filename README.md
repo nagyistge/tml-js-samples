@@ -7,6 +7,19 @@ TML Samples for JavaScript
 
 This folder contains various samples for TML JavaScript library - both client-side and server-side.
 
+'''Client-Side'''
+
+* dom - demonstrates the use of TML with plain HTML - shows dynamic parsing and translation
+* underscore - demonstrates the use of TML with underscore.js templating framework
+* handlebars - demonstrates the use of TML with handlebars templating framework
+* angular - demonstrates the use of TML with angular framework
+* backbone - demonstrates the use of TML with backbone.js framework
+
+'''Server-Side'''
+
+* express-ejs - demonstrates the use of TML with Node.js, Express and EJS
+* express-jade - demonstrates the use of TML with Node.js, Express and Jade
+
 
 Documentation
 ==================
