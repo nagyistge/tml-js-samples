@@ -1,0 +1,16 @@
+{
+  "name": "tml-js-samples-express-ejs",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.0.1",
+    "ejs": "~0.8.5",
+    "debug": "~0.7.4",
+    "express": "~4.2.0",
+    "tml-js": "latest",
+    "tml-express": "latest"
+  }
+}

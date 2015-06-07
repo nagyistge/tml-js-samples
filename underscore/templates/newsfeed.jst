@@ -1,0 +1,47 @@
+<style>
+    .title {
+        padding: 10px
+    }
+    .newsfeed{
+        margin: 10px;
+        padding: 5px 10px;
+        background: white;
+        border: 1px solid #ccc;
+    }
+    .newsfeed .story {
+        padding: 5px 10px;
+        border-bottom: 1px solid #eee;
+    }
+    .newsfeed .date {
+        font-size: 10px;
+        color: #888;
+        float:right;
+    }
+
+    .language_selector {
+        float:right;
+        font-size:12px;
+        margin-top:20px;
+    }
+</style>
+
+<div style="width:800px;">
+
+<% tml_begin_block({source: "newsfeed_stories"}) %>
+    <h1 class="title">
+        <div class="language_selector">
+            <%= tml_language_selector('bootstrap') %>
+        </div>
+        <%= tr("Latest News") %>
+    </h1>
+
+    <div class="newsfeed">
+        <% _.each(stories, function(story) { %>
+            <div class="story">
+                <%= tr(story[0], story[1]) %>
+            </div>
+        <% }); %>
+    </div>
+<% tml_end_block() %>
+
+</div>

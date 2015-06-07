@@ -1,0 +1,9 @@
+node_modules
+tmp
+.idea
+coverage
+doc
+coverage.html
+dump.rdb
+reports
+npm-debug.log
