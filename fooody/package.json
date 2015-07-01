@@ -13,6 +13,6 @@
     "jade": "~1.3.0",
     "morgan": "~1.0.0",
     "static-favicon": "~1.0.0",
-    "tml-express": "^0.1.4"
+    "tml-express": "^0.1.5"
   }
 }
