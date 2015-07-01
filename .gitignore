@@ -8,3 +8,5 @@ build.xml
 .settings
 .idea/*
 node_modules/
+*.log
+**/.idea/*
