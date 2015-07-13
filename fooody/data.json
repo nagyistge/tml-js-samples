@@ -260,7 +260,7 @@
       "id":"pasta-chicken-salad",
       "name":"Sesame Pasta Chicken Salad",
       "category":"salad",
-      "description":"",
+      "description":"This is a great change of pace from normal pasta salads.",
       "image":"/images/chicken-pasta-salad.jpg",
       "preparation":"Heat a skillet over medium-high heat. Add sesame seeds, and cook stirring frequently until lightly toasted. Remove from heat, and set aside.",
       "directions":[
@@ -335,7 +335,7 @@
       "id":"garlic-parmesan-chicken",
       "name":"Baked Garlic Parmesan Chicken",
       "category":"chicken",
-      "description":"",
+      "description":"An Italian dish made with a shallow or deep-fried sliced aubergine filling, layered with cheese and tomato sauce.",
       "image":"/images/parmesan-chicken.jpg",
       "preparation":"Preheat oven to 350 degrees F (175 degrees C). Lightly grease a 9x13 inch baking dish.",
       "directions":[
@@ -443,7 +443,7 @@
       "id":"chicken-pot-pie",
       "name":"Chicken Pot Pie",
       "category":"chicken",
-      "description":"",
+      "description":"A type of meat pie with a top crust, generally made of flaky pastry.",
       "image":"/images/chicken-pot-pie.jpg",
       "preparation":"Preheat oven to 425 degrees F (220 degrees C.)",
       "directions":[
@@ -523,7 +523,7 @@
       "id":"pear-salad",
       "name":"Pear Salad",
       "category":"salad",
-      "description":"",
+      "description":"A light salad with refreshing pears and avacados.",
       "image":"/images/pear-salad.jpg",
       "preparation":"In a skillet over medium heat, stir 1/4 cup of sugar together with the pecans. Continue stirring gently until sugar has melted and caramelized the pecans. Carefully transfer nuts onto waxed paper. Allow to cool, and break into pieces.",
       "directions":[
@@ -598,7 +598,7 @@
       "id":"harvest-salad",
       "name":"Harvest Salad",
       "category":"salad",
-      "description":"",
+      "description":"An easy salad made with pieces of tomatoes, sliced avacados and rasbery jam.",
       "image":"/images/harvest-salad.jpg",
       "preparation":"Preheat oven to 375 degrees F (190 degrees C). Arrange walnuts in a single layer on a baking sheet. Toast in oven for 5 minutes, or until nuts begin to brown.",
       "directions":[
@@ -658,7 +658,7 @@
       "id":"garlic-marinated-steak",
       "name":"Savory Garlic Marinated Steaks",
       "category":"beef",
-      "description":"",
+      "description":"This blend of soy sauce, balsamic vinegar, and Worcestershire sauce makes an easy and tasty marinade for steak.",
       "image":"/images/steak.jpg",
       "preparation":"In a medium bowl, mix the vinegar, soy sauce, garlic, honey, olive oil, ground black pepper, Worcestershire sauce, onion powder, salt, liquid smoke, and cayenne pepper.",
       "directions":[
@@ -732,7 +732,7 @@
       "id":"bacon-burger",
       "name":"Bacon Wrapped Hamburgers",
       "category":"beef",
-      "description":"",
+      "description":"The ultimate bacon burger recipe.",
       "image":"/images/bacon-burger.jpg",
       "preparation":"Preheat a grill for high heat.",
       "directions":[
@@ -797,7 +797,7 @@
       "id":"beef-kabobs",
       "name":"Beef Kabobs",
       "category":"beef",
-      "description":"",
+      "description":"Kebab, is a Middle Eastern, Eastern Mediterranean, and South Asian dish of pieces meat on a skewer.",
       "image":"/images/beef-kabobs.jpg",
       "preparation":"In a large resealable plastic bag, mix the teriyaki sauce, honey, garlic powder, and ginger. Place red bell peppers, onion wedges, mushrooms, beef, and chicken in the bag with the marinade. Seal, and refrigerate 4 to 24 hours.",
       "directions":[
@@ -855,7 +855,7 @@
       "id":"ginger-glazed-mahi-mahi",
       "name":"Ginger Glazed Mahi Mahi",
       "category":"fish",
-      "description":"",
+      "description":"Firm mahi-mahi in a delicious ginger and garlic sauce.",
       "image":"/images/mahi-mahi.jpg",
       "preparation":"In a shallow glass dish, stir together the honey, soy sauce, balsamic vinegar, ginger, garlic and olive oil. Season fish fillets with salt and pepper, and place them into the dish. If the fillets have skin on them, place them skin side down. Cover, and refrigerate for 20 minutes to marinate.",
       "directions":[
@@ -907,7 +907,7 @@
       "id":"shrimp-francesca",
       "name":"Shrimp Francesca",
       "category":"fish",
-      "description":"",
+      "description":"Large shrimp and chunks of artichoke hearts are covered with crumbs and drizzled with garlicky butter.",
       "image":"/images/shrimp.jpg",
       "preparation":"Preheat oven to 375 degrees F (190 degrees C). Lightly grease a 9x13-inch baking dish.",
       "directions":[
@@ -961,7 +961,7 @@
       "id":"slammin-salmon",
       "name":"Slammin' Salmon",
       "category":"fish",
-      "description":"",
+      "description":"Get this all-star, easy-to-follow Salmon recipe.",
       "image":"/images/salmon.jpg",
       "preparation":"Stir balsamic vinegar, lemon juice, and soy sauce with salt, brown sugar, ground ginger, paprika, pepper, and red pepper flakes until the salt has dissolved. Stir in garlic, green onions, sesame oil, and peanut oil until well combined.",
       "directions":[
