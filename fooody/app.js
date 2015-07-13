@@ -22,10 +22,13 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(tml.init("18a2276c1e19c938c955857c222b5f9d9a37b45a68c7754a0f97d44c2eedad2e", {
+app.use(tml.init("10378fe12f942b104cb00890255dae915f2bc2a4f8ba467a70e3d7d6801cb418", {
+  host: "http://localhost:3000"
+
   //current_source: {
   //  "recipe\\/[\\d]+$": 'current'
   //}
+
   //current_source: function(request) {
   //  if (request.url.indexOf('profile/')) {
   //    return 'profile/view';
@@ -38,7 +41,7 @@ app.use(tml.init("18a2276c1e19c938c955857c222b5f9d9a37b45a68c7754a0f97d44c2eedad
   //current_source: {
   //  'recipe/:id': 'recipe/view'
   //},
-  //
+
   //current_user: function(request) {
   //  return;
   //}
