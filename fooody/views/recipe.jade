@@ -28,10 +28,12 @@ block content
                       tbody
                         each ingredient in recipe.ingredients
                           tr
-                            th #{ingredient.quantity}
+                            //th #{ingredient.quantity}
                             td
-                              if ingredient.measurements
-                                != tr("{count | " + ingredient.measurements + "} " + ingredient.name, {count: ingredient.quantity})
-                              else
-                                != tr("{count | " + ingredient.name + "} ", {count: ingredient.quantity})
+                              != tr(ingredient.quantity + " " + (ingredient.measurements ? ingredient.measurements : '') + " " + ingredient.name)
+                              //!= tr("[strong: " + ingredient.quantity + "] " + (ingredient.measurements ? ingredient.measurements : '') + " " + ingredient.name, {strong: "<strong style='width: 40px; display: inline-block;' class='text-left' dir='ltr'>{$0}</strong>"})
+                              //if ingredient.measurements
+                              //  != tr("{count | " + ingredient.measurements + "} " + ingredient.name, {count: ingredient.quantity})
+                              //else
+                              //  != tr("{count | " + ingredient.name + "} ", {count: ingredient.quantity})
 
