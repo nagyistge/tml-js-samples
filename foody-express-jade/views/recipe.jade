@@ -1,0 +1,39 @@
+extends layout
+
+block content
+    .content
+      .container
+        .row
+          .col-md-10.col-md-offset-1
+            .row
+              .col-lg-6.col-sm-7
+                a.back-btn(href='/') !{ tr("Back") }
+                .recipe
+                  h2 !{ tr(recipe.name) }
+                  if recipe.preparation
+                    h5 !{ tr("Preparation") }
+                    p!= tr(recipe.preparation)
+                    hr
+                  h5 !{ tr("Directions") }
+                  ol
+                    each dir in recipe.directions
+                      li
+                        p!= tr(dir)
+              .col-sm-5.col-lg-offset-1
+                .panel.panel-default
+                  img.img-responsive(src='#{recipe.image}')
+                  .panel-body
+                    h5 !{ tr("Ingredient List") }
+                    table.table.recipe-table
+                      tbody
+                        each ingredient in recipe.ingredients
+                          tr
+                            //th #{ingredient.quantity}
+                            td
+                              != tr(ingredient.quantity + " " + (ingredient.measurements ? ingredient.measurements : '') + " " + ingredient.name)
+                              //!= tr("[strong: " + ingredient.quantity + "] " + (ingredient.measurements ? ingredient.measurements : '') + " " + ingredient.name, {strong: "<strong style='width: 40px; display: inline-block;' class='text-left' dir='ltr'>{$0}</strong>"})
+                              //if ingredient.measurements
+                              //  != tr("{count | " + ingredient.measurements + "} " + ingredient.name, {count: ingredient.quantity})
+                              //else
+                              //  != tr("{count | " + ingredient.name + "} ", {count: ingredient.quantity})
+
