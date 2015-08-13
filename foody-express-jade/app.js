@@ -36,7 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
   //  namespace: "573d1cb5d"
   //}
 
-app.use(tml.init("f66ef4cd81effb479a25c19280fda494b4efc183d8aa463222071d15d40fb909", {
+app.use(tml.init("83b4a4e7644f40343cd6749526a6817efe0b0ef9775d793e5bb64bebd2be755e", "9df37e96ce1586b56d0db4daf70cff43ae8e00cb5fc0e6bdedf33edd11268e55", {
   host: "http://localhost:3000",
 
   cache: {
