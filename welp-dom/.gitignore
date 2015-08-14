@@ -1,6 +1,5 @@
 node_modules
 tmp
-.idea
 dump.rdb
 reports
 npm-debug.log
