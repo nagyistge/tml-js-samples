@@ -14,21 +14,11 @@ app.use(cookieParser());
 app.use(express.static(__dirname + '/public'));
 
 // Tml initialization
-app.use(tml.init("47fc86738d2603c6d80b869433c2d897d9741b8f7aa0c5a6a5e9997f8f7ee803", {
-//app.use(tml.init("8b2120953b69430566f4e59fc750751f8bdf06c341b824c5493f350529c91499", {
-//  host: "http://localhost:3000",
-
-  // configure the cache adapter
-  //cache: {
-  //  adapter: 'redis',
-  //  host: process.env.REDIS_HOST || "localhost",
-  //  port: process.env.REDIS_PORT || 6379,
-  //  namespace: "0d945971",
-  //  timeout: 3600,
-  //  version: 4
-  //}
-
-  debug: true,
+app.use(tml.init({
+  key:    "9f319334e0b9d2a902bf99a7994cfc9a77c071ce5511af600d66917f884e6418",
+  token:  "b14a58c1b89030b712f090f2f8d9644b2767ca25ab01b73abef5711d333b14fa",
+  host:   "http://localhost:3000",
+  debug:  true,
 
   cache: {
     adapter: 'memcache',

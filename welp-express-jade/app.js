@@ -14,7 +14,11 @@ app.use(cookieParser());
 app.use(express.static(__dirname + '/public'));
 
 // Tr8n initialization
-app.use(tml.init("0d94597cec4aa324ac764f53f6cb0e33ef5b3954144364f91f27fde8e8fc36fb", {
+app.use(tml.init({
+  key:    "9f319334e0b9d2a902bf99a7994cfc9a77c071ce5511af600d66917f884e6418",
+  token:  "b14a58c1b89030b712f090f2f8d9644b2767ca25ab01b73abef5711d333b14fa",
+  host:   "http://localhost:3000",
+  debug:  true,
 
   // configure the cache adapter
   cache: {

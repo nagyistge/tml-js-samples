@@ -13,12 +13,17 @@
   <script src="/javascripts/jquery.min.js" type="text/javascript"></script>
   <script src="/javascripts/bootstrap.min.js"></script>
   <script src="/javascripts/handlebars-v1.3.0.js"></script>
-  <script src="//cdn.translationexchange.com/tml.js"></script>
+  <!--<script src="//cdn.translationexchange.com/tml.js"></script>-->
+  <script src="http://localhost:8080/tml.js"></script>
 
   <script>
-    tml.init("0d94597cec4aa324ac764f53f6cb0e33ef5b3954144364f91f27fde8e8fc36fb", {
-      "source": "handlebars",
-      initialized: function () {
+    tml.init({
+      key:    "9f319334e0b9d2a902bf99a7994cfc9a77c071ce5511af600d66917f884e6418",
+      token:  "b14a58c1b89030b712f090f2f8d9644b2767ca25ab01b73abef5711d333b14fa",
+      host:   "http://localhost:3000",
+      debug:  true,
+      source: "handlebars",
+      onLoad: function () {
         var context = {
           reviewer: {
             gender: "female",
@@ -109,7 +114,7 @@
           $(document.body).html(errorThrown);
         });
       },
-      languageChanged: function(language) {
+      onLanguageChange: function(language) {
         location.reload();
       }
     });

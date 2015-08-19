@@ -79,17 +79,19 @@ directory.Router = Backbone.Router.extend({
 });
 
 $(document).on("ready", function () {
-  tml.init("51f91800e6daebb002081260a13908bba9c31d2683b55779fc53d85dbbcf48f0", {
+  tml.init({
+    key: "ccf1cb7417081ec10956c8a2fa8e14d3e43e9e2ceb3d464c2f0933f83873a0af",
+    token: "d601231eb3129839a9bea608976be673de8aacee7801b3be16267d5ea6318ada",
+    host: "http://localhost:3000",
     source: "directory",
     immediate: true,
-    version: 11,
-    initialized: function(app) {
+    onLoad: function(app) {
       directory.loadTemplates(["HomeView", "ContactView", "ShellView", "EmployeeView", "EmployeeSummaryView", "EmployeeListItemView"], function () {
         directory.router = new directory.Router();
         Backbone.history.start();
       });
     },
-    languageChanged: function(language) {
+    onLanguageChange: function(language) {
       location.reload();
     }
   });
