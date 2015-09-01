@@ -29,6 +29,12 @@ router.get('/', function(req, res) {
   });
 });
 
+router.get('/test', function(req, res) {
+  res.render('test', {
+
+  });
+});
+
 router.get('/recipe/:id', function(req, res) {
   res.render('recipe', {
     recipe: findRecipesById(req.param("id"))

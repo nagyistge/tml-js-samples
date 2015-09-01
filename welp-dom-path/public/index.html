@@ -17,9 +17,12 @@
     <script src="http://localhost:8080/tml.js"></script>
     <script>
         tml.init({
-            key: "d0659dc08b7a6cefef381023c4169707fecbbca426ef71aa53d8cac89bfae34f",
-            token: "0710f786c7ac0adb8eab2a68f15be572c6b7defb355bffa7944423e979d5dc48",
-            host: "http://localhost:3000",
+            cache: {
+                enabled: true,
+                adapter: "browser",
+                version: "20150818235053",
+                path: "/cache"
+            },
             translateBody: true,
             debug: true
         });

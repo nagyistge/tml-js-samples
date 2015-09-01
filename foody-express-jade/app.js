@@ -42,7 +42,7 @@ app.use(tml.init({
   host: "http://localhost:3000",
   debug: true,
 
-  cache: {
+  cache1: {
     adapter: "memcache",
     hosts: ["localhost:11211"],
     namespace: "f66ef4cd81effb479a25c19280fda494b4efc183d8aa463222071d15d40fb909"
