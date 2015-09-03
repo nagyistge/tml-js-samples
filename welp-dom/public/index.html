@@ -13,13 +13,22 @@
     <script src="javascripts/jquery.min.js" type="text/javascript"></script>
     <script src="javascripts/bootstrap.min.js"></script>
 
-    <!--<script src="http://cdn.translationexchange.com/tml.js"></script>-->
-    <script src="http://localhost:8080/tml.js"></script>
+    <script src="https://cdn.translationexchange.com/tools/tml/latest/tml.min.js"></script>
+    <!--<script src="http://localhost:8080/tml.js"></script>-->
     <script>
         tml.init({
             key: "d0659dc08b7a6cefef381023c4169707fecbbca426ef71aa53d8cac89bfae34f",
             token: "0710f786c7ac0adb8eab2a68f15be572c6b7defb355bffa7944423e979d5dc48",
             host: "http://localhost:3000",
+            agent: {
+              enabled: true,
+              type:    "agent",
+              version: "latest",
+              domains: {
+                api:   "http://localhost:3000",
+                tools: "http://localhost:3002"
+              }
+            },
             translateBody: true,
             debug: true
         });
@@ -29,7 +38,7 @@
 
 <body>
 
-<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="navbar navbar-default navbar-static-top" data-tml-source="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -75,7 +84,7 @@
 
 <div class="container">
 
-    <div class="content">
+    <div class="content" data-tml-source="content">
 
         <div class="row">
             <div class="col-sm-12">
@@ -218,7 +227,7 @@
 
             <div class="col-sm-5">
 
-                <form>
+                <form data-tml-source="form">
                     <div class="form-group">
                         <label><small>Find</small></label>
                         <input type="text" class="form-control" placeholder="tacos, cheap dinner, etc.">
