@@ -42,6 +42,17 @@ app.use(tml.init({
   host: "http://localhost:3000",
   debug: true,
 
+  //agent: {
+  //  enabled:  true,
+  //  //host:     "https://cdn.translationexchange.com/tools/agent/0.1.6.4/agent.js",
+  //  type:     "agent",
+  //  version:  "0.1.6.4",
+  //  domains:  {
+  //    api:   "http://localhost:3000",
+  //    tools: "http://localhost:3002"
+  //  }
+  //},
+
   cache1: {
     adapter: "memcache",
     hosts: ["localhost:11211"],
