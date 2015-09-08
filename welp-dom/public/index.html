@@ -23,10 +23,12 @@
             agent: {
               enabled:  true,
               type:     "agent",
+//              host:     "http://localhost:8282/dist/agent.js",
               version:  "0.1.7",
               domains:  {
-                api:   "https://staging-api.translationexchange.com",
-                tools: "https://staging-translation-center.translationexchange.com"
+                api:        "https://staging-api.translationexchange.com",
+                tools:      "https://staging-translation-center.translationexchange.com",
+                analytics:  "https://analyst.translationexchange.com"
               }
             },
             translateBody: true,
