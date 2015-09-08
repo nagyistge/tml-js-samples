@@ -37,27 +37,41 @@ app.use(express.static(path.join(__dirname, 'public')));
   //}
 
 app.use(tml.init({
-  key: "83b4a4e7644f40343cd6749526a6817efe0b0ef9775d793e5bb64bebd2be755e",
-  token: "9df37e96ce1586b56d0db4daf70cff43ae8e00cb5fc0e6bdedf33edd11268e55",
-  host: "http://localhost:3000",
-  debug: true,
+  // lets switch to staging - i will make the app open
+  host:   "https://staging-api.translationexchange.com",
+  key:    "f28dd49115a8d386966f63d369c923e76a06cd2c4c34cc157f00e790ef4e2427",
+  token:  "425000119f70bc555b67c6477010a28a0bbb3ecec2f52c75d436d5b68192b6b9",
 
   agent: {
     enabled:  true,
-    host:     "https://cdn.translationexchange.com/tools/agent/0.1.7/agent.js",
     type:     "agent",
     version:  "0.1.7",
     domains:  {
-      api:   "http://localhost:3000",
-      tools: "http://localhost:3002"
+      api:   "https://staging-api.translationexchange.com",
+      tools: "https://staging-translation-center.translationexchange.com"
     }
-  },
-
-  cache1: {
-    adapter: "memcache",
-    hosts: ["localhost:11211"],
-    namespace: "f66ef4cd81effb479a25c19280fda494b4efc183d8aa463222071d15d40fb909"
   }
+
+  // Michael's Laptop
+  //key: "83b4a4e7644f40343cd6749526a6817efe0b0ef9775d793e5bb64bebd2be755e",
+  //token: "9df37e96ce1586b56d0db4daf70cff43ae8e00cb5fc0e6bdedf33edd11268e55",
+  //host: "http://localhost:3000",
+
+  //agent: {
+  //  enabled:  true,
+  //  type:     "agent",
+  //  version:  "0.1.7",
+  //  domains:  {
+  //    api:   "http://localhost:3000",
+  //    tools: "http://localhost:3002"
+  //  }
+  //},
+
+  //cache1: {
+  //  adapter: "memcache",
+  //  hosts: ["localhost:11211"],
+  //  namespace: "f66ef4cd81effb479a25c19280fda494b4efc183d8aa463222071d15d40fb909"
+  //}
 
   //current_locale: 'fr',
   //current_locale: function(request) {
