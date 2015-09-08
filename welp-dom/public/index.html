@@ -17,17 +17,16 @@
     <script src="https://cdn.translationexchange.com/tools/tml/stable/tml.min.js"></script>
     <script>
         tml.init({
-            key: "d0659dc08b7a6cefef381023c4169707fecbbca426ef71aa53d8cac89bfae34f",
-            token: "0710f786c7ac0adb8eab2a68f15be572c6b7defb355bffa7944423e979d5dc48",
-            host: "http://localhost:3000",
+            key: "56b9350775409c180eb2878749e52a5714615f79e67af109d91885e7390c70f3",
+            token: "04d6a4b5bbac6101eb7c5665c112a59e73cf5cca57f20da72acbf6fb9c6db731",
+            host: "https://staging-api.translationexchange.com",
             agent: {
               enabled:  true,
-              host:     "https://cdn.translationexchange.com/tools/agent/0.1.7/agent.js",
               type:     "agent",
               version:  "0.1.7",
               domains:  {
-                api:   "http://localhost:3000",
-                tools: "http://localhost:3002"
+                api:   "https://staging-api.translationexchange.com",
+                tools: "https://staging-translation-center.translationexchange.com"
               }
             },
             translateBody: true,
