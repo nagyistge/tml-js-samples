@@ -22,20 +22,6 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-//app.use(tml.init("573d1cb5d207b439abdcf1cad8ff76c56b00c275fa032a69f748b34c82613e07", {
-
-  //cache: {
-  //  adapter: "memcache",
-  //  hosts: ["localhost:11211"],
-  //  namespace: "573d1cb5d"
-  //}
-
-  //cache: {
-  //  adapter: "memcache",
-  //  hosts: ["172.31.30.155:11211"],
-  //  namespace: "573d1cb5d"
-  //}
-
 app.use(tml.init({
   // lets switch to staging - i will make the app open
   //host:   "https://staging-api.translationexchange.com",
