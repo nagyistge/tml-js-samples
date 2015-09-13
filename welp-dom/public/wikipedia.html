@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="client-nojs">
 <head>
+
+	<script src="http://localhost:8080/tml.js"></script>
+	<script>
+		tml.init({
+			key:    "d0659dc08b7a6cefef381023c4169707fecbbca426ef71aa53d8cac89bfae34f",
+			token:  "0710f786c7ac0adb8eab2a68f15be572c6b7defb355bffa7944423e979d5dc48",
+			host:   "http://localhost:3000",
+			agent: {
+				enabled:  true,
+				type:     "tools",
+				version:  "0.1.10",
+				domains:  {
+					api:        "http://localhost:3000",
+					tools:      "http://localhost:3002",
+					analytics:  "https://analyst.translationexchange.com"
+				}
+			},
+			translateBody: true,
+			debug: true
+		});
+	</script>
+
 <meta charset="UTF-8" />
 <title>Wikipedia, the free encyclopedia</title>
 <meta name="generator" content="MediaWiki 1.25wmf20" />
@@ -625,12 +647,6 @@ document.write("\u003Cscript src=\"//bits.wikimedia.org/en.wikipedia.org/load.ph
 mw.config.set({"wgBackendResponseTime":486,"wgHostname":"mw1213"});
 }</script>
 
-<script>tml.init("a47d83337006a2307822d2c2aebf9f6e3401f5aa0cba5d6d0668cb10e1951f14", {
-    host: "http://localhost:3000",
-    element: document.body,
-    version: 2,
-
-});</script>
 
 	</body>
 </html>
