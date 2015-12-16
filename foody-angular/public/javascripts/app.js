@@ -57,7 +57,7 @@ angular.module('foody', ['tml', 'ui.router'])
                 },
                 templateUrl: '/includes/main.html'
             });
-    })
+    });
 
 
 //Initialize TML after DOM ready
@@ -65,14 +65,11 @@ angular.element(document).ready(function() {
     tml.init({
         key: "50eb9d459cd289057f16f71ebc8df9ecd33475b4c2798cfc347165081ddb0abe",
         token: "4bfecca14a8af2c60158ff5c940aa1aeb7a1796fbe37b1500de6fa2dcf7aecef",
-        host: "https://api.translationexchange.com",
-        agent1:
-        {
-            enabled: true,
-            type: 'agent',
-            host: 'http://localhost:8282/dist/agent.js'
-        },
         debug: true,
+        agent: {
+          host: "https://tools.translationexchange.com/agent/staging/agent.min.js",
+          type: "agent"
+        },
         onLoad: function(app) {
             //bootstrap angular app after tml starts
             angular.bootstrap(document, ['foody']);
