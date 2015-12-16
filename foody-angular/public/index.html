@@ -8,13 +8,14 @@
     <title>Foody</title>
 
     <link rel='stylesheet' href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700"/>
-    <link rel='stylesheet' href="/stylesheets/bootstrap.min.css"/>
-    <link rel='stylesheet' href="/stylesheets/style.css"/>
+    <link rel='stylesheet' href="/stylesheets/bootstrap{{isRtl ? '.rtl' : ''}}.min.css"/>
+    <link rel='stylesheet' href="/stylesheets/style{{isRtl ? '.rtl' : ''}}.css"/>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="https://cdn.translationexchange.com/tools/tml-angular/stable/tml-angular.js"></script>
+    <!--<script src="components/tml-angular/dist/tml-angular.js"></script>-->
     <script src="javascripts/app.js"></script>
 </head>
 
@@ -67,7 +68,7 @@
                 </p>
             </div>
             <div class="col-md-4 text-right">
-                Translation Exchange, Inc
+                Translation Exchange, Inc 
                 <span tml-ls='popup'></span>
             </div>
         </div>
