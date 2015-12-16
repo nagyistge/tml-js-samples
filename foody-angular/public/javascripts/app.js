@@ -36,7 +36,7 @@ angular.module('foody', ['tml', 'ui.router'])
             })
             .state('index', {
                 parent: 'root',
-                url: "/o ",
+                url: "/",
                 resolve: {
                     //Imagine there's a nice API returning these bits of data
                     categories: function (data)
