@@ -1,0 +1,12 @@
+{
+  "name": "foody-angular",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "bin/serve"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "*"
+  }
+}
