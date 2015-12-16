@@ -1,7 +1,7 @@
 angular.module('foody', ['tml', 'ui.router'])
     .config(/*@ngInject*/ function ($urlRouterProvider, $stateProvider)
     {
-        //$urlRouterProvider.otherwise('/');
+        $urlRouterProvider.otherwise('/');
         $urlRouterProvider.when('', '/');
         
         $stateProvider
