@@ -5,7 +5,9 @@
   "scripts": {
     "start": "bin/serve"
   },
-  "dependencies": {},
+  "dependencies": {
+    "tml-angular": "0.0.5"
+  },
   "devDependencies": {
     "live-server": "*"
   }
