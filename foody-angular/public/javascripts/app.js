@@ -1,8 +1,9 @@
 angular.module('foody', ['tml', 'ui.router'])
     .config(/*@ngInject*/ function ($urlRouterProvider, $stateProvider)
     {
-        $urlRouterProvider.otherwise('/index');
-
+        $urlRouterProvider.otherwise('/');
+        $urlRouterProvider.when('', '/');
+        
         $stateProvider
             .state('root', {
                 url: "",
@@ -35,7 +36,7 @@ angular.module('foody', ['tml', 'ui.router'])
             })
             .state('index', {
                 parent: 'root',
-                url: "/index",
+                url: "/",
                 resolve: {
                     //Imagine there's a nice API returning these bits of data
                     categories: function (data)
