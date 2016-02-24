@@ -17,12 +17,18 @@
     <script src="http://localhost:8080/tml.js"></script>
     <script>
         tml.init({
+            key:    "75379cfe430000389325e3ba827ef2423a7d7a0bd009382e13c6781b9418af67",
+            host:   "http://localhost:3000",
             cache: {
                 enabled: true,
                 adapter: "browser",
-                version: "20150818235053",
+                version: "20160113190446",
                 path: "/cache"
             },
+            agent: {
+                host: "http://localhost:8282/dist/agent.js"
+            },
+            language_selector: true,
             translateBody: true,
             debug: true
         });
@@ -52,7 +58,6 @@
                 <li><a href="#">Help</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li data-tml-language-selector="bootstrap" data-tml-language-selector-element="none" data-tml-toggle="true"></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
 

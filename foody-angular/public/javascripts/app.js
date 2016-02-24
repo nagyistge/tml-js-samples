@@ -62,13 +62,13 @@ angular.module('foody', ['tml', 'ui.router'])
 //Initialize TML after DOM ready
 angular.element(document).ready(function() {
     tml.init({
-        key: "50eb9d459cd289057f16f71ebc8df9ecd33475b4c2798cfc347165081ddb0abe",
-        token: "4bfecca14a8af2c60158ff5c940aa1aeb7a1796fbe37b1500de6fa2dcf7aecef",
+        key: "2217b0fb73d6fa2a87c4f145ce2cb6f8f6bdaed4df8497fb612997813954f68b",
+        host: "http://localhost:3000",
         debug: true,
         agent: {
-          host: "https://tools.translationexchange.com/agent/staging/agent.min.js",
-          type: "agent"
+            host: "http://localhost:8282/dist/agent.js"
         },
+        language_selector: true,
         onLoad: function(app) {
             //bootstrap angular app after tml starts
             angular.bootstrap(document, ['foody']);
