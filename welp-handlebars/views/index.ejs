@@ -18,11 +18,14 @@
 
   <script>
     tml.init({
-      key:    "9f319334e0b9d2a902bf99a7994cfc9a77c071ce5511af600d66917f884e6418",
-      token:  "b14a58c1b89030b712f090f2f8d9644b2767ca25ab01b73abef5711d333b14fa",
+      key:    "3afab3cd9987da6f7dabc47870cb9e5099691ece290d99e303d98ed1e5fcef5f",
       host:   "http://localhost:3000",
       debug:  true,
       source: "handlebars",
+      agent: {
+        host: "http://localhost:8282/dist/agent.js"
+      },
+      language_selector: true,
       onLoad: function () {
         var context = {
           reviewer: {
@@ -94,10 +97,6 @@
           return new Handlebars.SafeString(window.trl(label, description, options.hash));
         });
 
-        Handlebars.registerHelper('tml_language_selector', function (type, options) {
-          return new Handlebars.SafeString(tml_language_selector(type, options.hash));
-        });
-
         Handlebars.registerHelper('tml_block', function (options) {
           window.tml_begin_block(options.hash);
           var result = options.fn();
@@ -109,9 +108,9 @@
           url: "/templates/index.hjs"
         }).done(function (data) {
           var template = Handlebars.compile(data);
-          $(document.body).html(template(context));
+          $("#content").html(template(context));
         }).fail(function (jqXHR, textStatus, errorThrown) {
-          $(document.body).html(errorThrown);
+          $("#content").html(errorThrown);
         });
       },
       onLanguageChange: function(language) {
@@ -123,7 +122,9 @@
 </head>
 
 <body>
+<div id="content">
 
+</div>
 </body>
 </html>
 

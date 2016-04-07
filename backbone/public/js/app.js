@@ -81,10 +81,13 @@ directory.Router = Backbone.Router.extend({
 $(document).on("ready", function () {
   tml.init({
     key: "ccf1cb7417081ec10956c8a2fa8e14d3e43e9e2ceb3d464c2f0933f83873a0af",
-    token: "d601231eb3129839a9bea608976be673de8aacee7801b3be16267d5ea6318ada",
     host: "http://localhost:3000",
     source: "directory",
     immediate: true,
+    language_selector: true,
+    agent: {
+      host: "http://localhost:8282/dist/agent.js"
+    },
     onLoad: function(app) {
       directory.loadTemplates(["HomeView", "ContactView", "ShellView", "EmployeeView", "EmployeeSummaryView", "EmployeeListItemView"], function () {
         directory.router = new directory.Router();
