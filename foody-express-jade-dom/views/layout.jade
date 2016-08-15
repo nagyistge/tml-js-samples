@@ -30,3 +30,42 @@ html
           host: "http://localhost:8282/dist/agent.js"
         }
       });
+
+      //locale:             {
+      //    strategy:       'param',
+      //    cookie:         'true',
+      //    param:          'locale'
+      //},
+
+      // force the locale using a string - if it is not supported - we fallback to hardcoded default locale
+      //locale:             'ru',
+      // for some reason, they need to fetch the locale from some method - same as above - not supported, get default
+      //locale:             function() {
+      //    return some_object.locale;
+      //},
+
+      // our default approach
+      //locale:             {
+      //    strategy:   'param',
+      //    param:      'locale',
+      //    cookie:     true,
+      //    redirect:   false
+      //},
+
+      // look at the path and get it from there
+      //locale:             {
+      //    strategy:       'pre-path'
+      //},
+
+      //locale:             {
+      //    strategy:       'pre-domain',
+      //},
+
+      //locale: {
+      //    strategy:   'custom-domain',
+      //    mapping: {
+      //            'en': 'my-en.lvh.me',
+      //            'ru': 'my-ru.lvh.me',
+      //            'ko': 'my-ko.lvh.me'
+      //    }
+      //},
