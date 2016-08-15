@@ -6,14 +6,13 @@
     <!--<script src="https://cdn.translationexchange.com/tools/tml/stable/tml.min.js"></script>-->
     <script>
         tml.init({
-            key:    "75379cfe430000389325e3ba827ef2423a7d7a0bd009382e13c6781b9418af67",
+            key:    "2490d272f154b5cbf28b4de25bfc207604f0196c316ddcb42a2486b8a02765e9",
             host:   "http://localhost:3000",
+            cdn_host: "https://trex-snapshots-dev.s3-us-west-1.amazonaws.com",
             translateBody: true,
+            version_check_interval: 30,
             debug: true,
-            version_check_interval: 10,
             language_selector: true,
-            ignoreElements: ['.navbar-collapse'],
-            ignore_elements: ['.navbar-collapse'],
             agent: {
                 host: "http://localhost:8282/dist/agent.js"
             }

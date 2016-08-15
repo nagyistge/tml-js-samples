@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title Foody
+
+    link(href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700', rel='stylesheet')
+    link(href='/stylesheets/bootstrap.min.css', rel='stylesheet')
+    link(href='/stylesheets/style.css', rel='stylesheet')
+
+  body(dir='ltr', data-spy='scroll', data-target='#nav-categories')
+    include partials/header
+    block content
+    include partials/footer
+    script(src='/javascripts/jquery.min.js')
+    script(src='/javascripts/bootstrap.min.js')
+    script(src='http://localhost:8080/tml.js')
+    script.
+      tml.init({
+        key:    "2bd82fe3a5159cb0d8d4a47facbc26a73a4cd6be7e97719569bb71498a3b69a7",
+        host:   "http://localhost:3000",
+        cdn_host: "https://trex-snapshots-dev.s3-us-west-1.amazonaws.com",
+        translateBody: true,
+        version_check_interval: 30,
+        debug: true,
+        language_selector: true,
+        locale: {
+          strategy: 'pre-path'
+        },
+        agent: {
+          host: "http://localhost:8282/dist/agent.js"
+        }
+      });

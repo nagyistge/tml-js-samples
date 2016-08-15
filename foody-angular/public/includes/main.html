@@ -9,6 +9,19 @@
         <p tml-tr>
             Food from around the world
         </p>
+
+        <!--<p tml-tr user="'Михаил'">-->
+            <!--This is {user::pos} blog-->
+        <!--</p>-->
+
+        <!--<tml-tr values='{ link: { href: "http://www.bing.com/" }, user: categories[0].name}'>-->
+            <!--[link]{user}[/link] uploaded a photo-->
+        <!--</tml-tr>-->
+
+        <!--<span tml-tr devices='categories' devices-format='{ attribute: "name" }' devices-options='{translate: true}'>-->
+            <!--Don't forget to update your devices {devices}-->
+        <!--</span>-->
+
     </div>
 </div>
 
@@ -17,7 +30,7 @@
         <div id="nav-categories">
             <ul class="nav nav-tabs">
                 <li ng-repeat="category in categories">
-                    <a ng-href="#{{category.name}}" tml-tr="{{category.name}}"></a>
+                    <a href='#' ng-click="gotoAnchor(category.id)" tml-tr="{{category.name}}"></a>
                 </li>
             </ul>
         </div>
@@ -29,8 +42,7 @@
         <a id="{{category.id}}" class="anchor">&nbsp;</a>
 
         <div class="page-header">
-            <h3>
-                <a href="/category/{{category.id}}" tml-tr="{{category.name}}"></a>
+            <h3 tml-tr="{{category.name}}">
             </h3>
         </div>
         <div class="row">

@@ -29,7 +29,9 @@ app.use(tml.init({
   //token:  "425000119f70bc555b67c6477010a28a0bbb3ecec2f52c75d436d5b68192b6b9",
 
   host:   "http://localhost:3000",
-  key:    "f6960385eb44fd4fd8d8fc9c1b28a03de5bbea19a6b5c024fb176c6e26df3b78",
+  key:    "2bd82fe3a5159cb0d8d4a47facbc26a73a4cd6be7e97719569bb71498a3b69a7",
+  cdn_host: 'https://trex-snapshots-dev.s3-us-west-1.amazonaws.com',
+
   debug:  true,
 
   agent: {

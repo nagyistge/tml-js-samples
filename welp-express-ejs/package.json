@@ -10,6 +10,7 @@
     "ejs": "~0.8.5",
     "debug": "~0.7.4",
     "express": "~4.2.0",
-    "tml-express": "latest"
+    "tml-express": "latest",
+    "memcached": "~2.2.0"
   }
 }
