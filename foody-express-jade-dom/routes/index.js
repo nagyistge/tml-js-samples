@@ -46,12 +46,14 @@ router.get('/recipe/:id', function(req, res) {
 router.get('/:locale?', function(req, res) {
   res.render('index', {
     categories: data.categories,
+    locale: req.param('locale', 'en'),
     recipes: ordered_recipes
   });
 });
 
 router.get('/:locale?/recipe/:id', function(req, res) {
   res.render('recipe', {
+    locale: req.param('locale', 'en'),
     recipe: findRecipesById(req.param("id"))
   });
 });
