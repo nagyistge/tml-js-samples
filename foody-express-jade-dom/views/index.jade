@@ -29,7 +29,7 @@ block content
             .row
               each rec in recipes[cat.id]
                 .col-lg-4.col-md-6
-                  a.panel.panel-default.recipe-thumbnail(href='#{locale}/recipe/#{rec.id}')
+                  a.panel.panel-default.recipe-thumbnail(href='/#{locale}/recipe/#{rec.id}')
                     img.img-responsive(src='#{rec.image}')
                     .panel-body
                       h4

@@ -59,6 +59,4 @@ router.get('/:locale?/recipe/:id', function(req, res) {
 });
 
 
-
-
 module.exports = router;
